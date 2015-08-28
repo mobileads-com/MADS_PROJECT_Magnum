@@ -1,0 +1,384 @@
+@font-face {
+    font-family: FuturaStd-Medium;
+    src: url(../fonts/FuturaStd-Medium.otf);
+   }
+body {
+    margin: 0;
+}
+#rma-widget{
+	width: 320px;
+	height: 480px;
+	position: relative;
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  overflow: hidden;
+	-ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none;
+}
+.firstBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg);
+	pointer-events: none;
+}
+.secondBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: url(../img/bg2.jpg);
+	pointer-events: none;
+}
+.logo{
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	width: 153px;
+	margin-left: -76.5px;
+	  pointer-events: none;
+}
+.logo img{
+	width: 100%;
+}
+.punctir{
+	position: absolute;
+	top: 145px;
+	left: 50%;
+	margin-left: -54.5px;
+	width: 99px;
+	height: 290px;
+	overflow: hidden;
+}
+.textOnPunctir{
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	margin-left: -74.5px;
+	width: 149px;
+	height: 110px;
+	color: #9f7726;
+	font-family: FuturaStd-Medium;
+	pointer-events:none;
+	z-index: 4;
+}
+.finger{
+	position: absolute;
+  	left: 50%;
+  	
+	margin-left: -14.5px;
+  	  pointer-events: none;
+}
+.punctir2{
+	position: absolute;
+	top: 145px;
+	left: 50%;
+	margin-left: -54.5px;
+	width: 102px;
+	height: 290px;
+	z-index: 2;
+	/* pointer-events: none; */
+	overflow: hidden;
+	background: url(../img/punctir.png) no-repeat 100% 100%;
+}
+.icecream {
+	position: absolute;
+	z-index: 0;
+  
+	width: 88px;
+  
+	height: 276px;
+  
+	margin-top: 10px;
+  
+	margin-left: 7px;
+  
+	background: url(../img/icecream.png) no-repeat;
+  
+	background-position: center;
+	background-size: 100% 100%;
+}
+.canvas {
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+  height: 315px;
+  left: 4px;
+}
+.hashtag{
+	position: absolute;
+	width: 84px;
+	height: 14px;
+	left: 50%;
+	margin-left: -42px;
+	bottom: 15px;
+}
+.bubble{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	pointer-events: none;
+}
+.confeti{
+	position: absolute;
+	background: url(../img/confeti.png);
+	width: 180px;
+	height: 182px;
+	top: 194px;
+	left: 75px;
+	opacity: 0;
+}
+.confeti2{
+	position: absolute;
+	background: url(../img/confeti2.png);
+	width: 260px;
+	height:241px;
+	top: 148px;
+	left: 30px;
+	opacity: 0;
+	pointer-events: none;
+}
+.bubble{
+	opacity: 0;
+	
+}
+.bubble div img{
+	width: 100%;
+}
+.bubble div {
+	position: absolute;
+}
+.b1{
+    top: 410px;
+    left: -10px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ghtml-transform: rotate(-10deg);
+}
+.b2{
+    top: 444px;
+  left: 105px;
+  width: 45px;
+  z-index: 2;
+    transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    -ghtml-transform: rotate(-13deg);
+}
+.b3{
+    top: 407px;
+    left: 129px;
+    width: 100px;
+  	z-index: 1;
+    transform: rotate(-29deg);
+    -webkit-transform: rotate(-29deg);
+    -moz-transform: rotate(-29deg);
+    -ghtml-transform: rotate(-29deg);
+}
+.b4{
+      top: 458px;
+	  left: 84px;
+	  width: 14px;
+	  z-index: 1;
+	  transform: rotate(10deg);
+	  -webkit-transform: rotate(10deg);
+	  -moz-transform: rotate(10deg);
+	  -ghtml-transform: rotate(10deg);
+}
+.b5{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 1;
+	  transform: rotate(-8deg);
+	  -webkit-transform: rotate(-8deg);
+	  -moz-transform: rotate(-8deg);
+	  -ghtml-transform: rotate(-8deg);
+}
+.b6{
+    top: 407px;
+    left: 129px;
+    width: 100px;
+  	z-index: 1;
+    transform: rotate(-29deg);
+    -webkit-transform: rotate(-29deg);
+    -moz-transform: rotate(-29deg);
+    -ghtml-transform: rotate(-29deg);
+}
+.b7{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 1;
+	  transform: rotate(-21deg);
+	  -webkit-transform: rotate(-21deg);
+	  -moz-transform: rotate(-21deg);
+	  -ghtml-transform: rotate(-21deg);
+}
+.b8{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 1;
+	  transform: rotate(-8deg);
+	  -webkit-transform: rotate(-8deg);
+	  -moz-transform: rotate(-8deg);
+	  -ghtml-transform: rotate(-8deg);
+}
+.b9{
+    top: 444px;
+	  left: 105px;
+	  width: 45px;
+	  z-index: 2;
+    transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    -ghtml-transform: rotate(-13deg);
+}
+.b10{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 1;
+	  transform: rotate(-16deg);
+	  -webkit-transform: rotate(-16deg);
+	  -moz-transform: rotate(-16deg);
+	  -ghtml-transform: rotate(-16deg);
+}
+.b11{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 0;
+	  transform: rotate(-16deg);
+	  -webkit-transform: rotate(-16deg);
+	  -moz-transform: rotate(-16deg);
+	  -ghtml-transform: rotate(-16deg);
+}
+.b12{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 1;
+	  transform: rotate(-8deg);
+	  -webkit-transform: rotate(-8deg);
+	  -moz-transform: rotate(-8deg);
+	  -ghtml-transform: rotate(-8deg);
+}
+.b13{
+      top: 409px;
+	  left: 228px;
+	  width: 46px;
+	  z-index: 1;
+	  transform: rotate(-8deg);
+	  -webkit-transform: rotate(-8deg);
+	  -moz-transform: rotate(-8deg);
+	  -ghtml-transform: rotate(-8deg);
+}
+.button{
+	width: 280px;
+	height: 36px;
+	position: absolute;
+	top:435px;
+	opacity: 0;
+	left: 50%;
+	margin-left: -140px;
+}
+.newMagnum{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	width: 227px;
+	height: 75px;
+	margin-left: -118.5px;
+	opacity: 0;
+}
+.belgianChocolate{
+	width: 59px;
+	height: 58px;
+	position: absolute;
+	right: 14px;
+	top:340px;
+	opacity: 0;
+	z-index: 3;
+}
+.storeBtn{
+	border:none;
+	cursor: pointer;
+	width: 134px;
+	height: 38px;
+	position: absolute;
+	left: 0;
+	background: url(../img/storeBTN.png);
+}
+.findBtn{
+	border:none;
+	cursor: pointer;
+	width: 134px;
+	height: 37px;
+	position: absolute;
+	left: 50%;
+	margin-left: -67px;
+	background: url(../img/findBTN.png);
+}
+.modal{
+	position: absolute;
+	z-index: 10;
+	top: 60px;
+	width: 296px;
+	height: 409px;
+	left: 50%;
+	margin-left: -148px;
+	background: #fff;
+	padding:11px 11px 11px 11px;
+	border-radius: 10px;
+	display: none;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-io-box-sizing:border-box;
+	-ghtml-box-sizing:border-box;
+}
+.closeModal{
+	background: url(../img/CloseBTN.png);
+	width: 174px;
+	height: 38px;
+	position: absolute;
+	left: 50%;
+	border: none;
+	cursor: pointer;
+	top: 360px;
+	margin-left: -87px;
+}
+.gmap{
+	position: absolute;
+	width: 274px;
+	height: 334px;
+	left: 50%;
+	background: #f00;
+	margin-left: -137px;
+}
+.scratchCanvas{
+	width: 89px;
+	margin-top: 14px;
+	height: 273px;
+	margin-left: 7px;
+}
+.scratchCard{
+	position: absolute;
+	z-index: 999;
+	pointer-events
+}
+#redux{
+	  width: 95px;
+  height: 271px;
+  
+	  position: absolute;
+  
+	  z-index: 1;
+	  top: 12px;
+	  /* border: 1px #f00 solid; */
+	  left: 3px;
+}
