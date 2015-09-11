@@ -142,6 +142,7 @@ var testunit = function() {
             <div class="b13"><img src="' + app.path + 'img/b.png" alt=""></div> \
         </div> \
         <div class="button"> \
+          <img class="storeBtn" src="' + app.path + 'img/storeBTN.png" alt="q"> \
           <img class="findBtn" src="' + app.path + 'img/findBTN.png" alt="q"> \
         </div> \
         <div class="newMagnum"> \
@@ -323,7 +324,7 @@ var testunit = function() {
                         delay: 2.0,
                         width: "134px",
                         marginTop: "0px",
-                        marginLeft: "-67px",
+                        marginLeft: "5px",
                         height: "37px"
                     });
                     tl.to(".logo", 1, {
@@ -338,12 +339,26 @@ var testunit = function() {
                     });
 
                     function clickVes() {
+                        /* @NOTE disable click ad to landing page */
+                        /*
                         $("#rma-widget").attr("class", "sssq");
                         $(".sssq").css("cursor", "pointer")
                         $(".sssq").click(function() {
                             app.linkOpener('https://www.facebook.com/MagnumMalaysia');
                             app.tracker("site")
                         })
+                        */
+                        /* @NOTE find btn */
+                        $('.fintBtn').on('click', function (e) {
+                            app.linkOpener('https://www.facebook.com/MagnumMalaysia');
+                            app.tracker("site")
+                        });
+                        
+                        /* @NOTE store btn */
+                        $('.storeBtn').on('click', function (e) {
+                            e.preventDefault();
+                            alert();
+                        });
                     }
                     setTimeout(clickVes, 2000);
                 }

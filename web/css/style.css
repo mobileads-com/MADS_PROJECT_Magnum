@@ -320,9 +320,10 @@ body {
 	height: 37px;
 	position: absolute;
 	left: 50%;
-	margin-left: -67px;
+	margin-left: 5px;
 	background: url(../img/findBTN.png);
 }
+
 .modal{
 	position: absolute;
 	z-index: 10;
@@ -382,3 +383,8 @@ body {
 	  /* border: 1px #f00 solid; */
 	  left: 3px;
 }
+
+
+
+
+
