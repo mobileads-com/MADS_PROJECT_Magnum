@@ -357,7 +357,7 @@ var testunit = function() {
                         })
                         */
                         /* @NOTE find btn */
-                        $('.fintBtn').on('click', function (e) {
+                        $('.findBtn').on('click', function (e) {
                             app.linkOpener('https://www.facebook.com/MagnumMalaysia');
                             app.tracker("site")
                         });
