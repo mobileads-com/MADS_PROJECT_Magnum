@@ -150,7 +150,15 @@ var testunit = function() {
         </div> \
         <div class="belgianChocolate"> \
             <img src="' + app.path + 'img/belgianChocolate.png" alt=""> \
-        </div>';
+        </div> \
+        <div class="toogleForMap overlayMap"></div> \
+        <div class="toogleForMap popUpMap"> \
+        <div id="container1"></div> \
+        <span class="cancelModal"> \
+            <img class="" src="' + app.path + 'img/CloseBTN.png" alt="q"> \
+        </span> \
+        </div> '
+        ;
     };
     var animation = function() {
         var wipeLoad = function() {
@@ -355,9 +363,15 @@ var testunit = function() {
                         });
                         
                         /* @NOTE store btn */
-                        $('.storeBtn').on('click', function (e) {
-                            e.preventDefault();
-                            alert();
+                        $('.storeBtn').on('click', function (e) {qqqq();
+                            $(".popUpMap").css("display","block");
+                            $(".overlayMap").css("display","block");
+                            $('.popUpMap').addClass('cur');   
+                        });
+                        
+                        $(".cancelModal, .overlayMap").click(function() {
+                            $(".popUpMap").css("display","none");
+                            $(".overlayMap").css("display","none");
                         });
                     }
                     setTimeout(clickVes, 2000);
@@ -383,6 +397,7 @@ var testunit = function() {
 
             }; /*-----*/
             contentHtml();
+            app.loadJs(app.path + 'js/gmap.js');
             app.loadJs(app.path + 'js/wipe.js', animationWithCont);
         };
         app.loadJs(app.path + 'js/tweenmax.js', wipeLoad)
@@ -390,6 +405,13 @@ var testunit = function() {
 
 
     app.loadJs(app.path + 'js/jquery.js', animation);
+    app.loadJs('https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=geometry&async=2&callback=MapApiLoaded');
+    
 
 }
+
+function MapApiLoaded() {
+   
+}
+
 testunit();

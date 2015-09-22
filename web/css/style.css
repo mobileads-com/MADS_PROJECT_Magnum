@@ -388,3 +388,124 @@ body {
 
 
 
+.popUpMap{
+    padding: 10px 10px 20px 10px;
+	width:300px;
+	height:380px;
+    top: 50%;
+    left: 50%;
+	margin:-170px -150px;
+	position: absolute;
+	z-index: 14;
+	background:#fff;
+	border-radius: 7px;
+	border:1px #f6efd9 solid;  
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.popUpMap>p{
+    text-align: left;
+	font-family: DINOReg; 
+	font-weight: 500;
+	margin:5px 0px 0px 5px;
+}
+.cancelModal{
+    position: relative;
+    padding-top: 44px;
+    margin-left: 55px;
+    font-family: Arial;
+    cursor: pointer;
+    top: 10px;
+}
+.cancelModal:hover{
+	color:#f00;
+}
+.overlayMap{
+	width: 320px;
+  	height: 100%;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	z-index: 13;
+	top:0;
+}
+.toogleForMap{
+	display:none;
+}
+
+
+
+
+
+
+
+#container1, #container2 {
+    width: 275px;
+    height: 310px;
+    border: 1px solid white;
+    margin: 1x;
+}
+
+.gm-style-iw div div {
+    overflow: hidden !important;
+}
+.marker-popup {
+    width: 180px;
+    height: auto;
+}
+.location-info {
+    width: 50%;
+    height: auto;
+    float: left;
+    background-color: #ffffff;
+}
+.location-info .info-title, .location-info .info-address {
+    margin: 3px 10px 3px 10px;
+    padding: 0;
+}
+.location-info .info-title {
+    font-size: 11px;
+    font-weight: bold;
+}
+.location-info .info-address {
+    font-size: 10px;
+}
+.directions {
+    margin-top: 5px;
+    width: 50%;
+    height: auto;
+    float: right;
+    background-color: #ffffff;
+}
+.directions a {
+    text-decoration: none;
+}
+.directions img {
+    margin: 0 0 0 15px;
+}
+.directions .directions-button {
+    text-align: left;
+    margin: 0 0 0 5px;
+    color: #2493d1;
+    font-size: 9px;
+}
+.directions-icon {
+    width: 20px;
+    height: 20px;
+    background: url("https://maps.gstatic.com/tactile/directions/travel_mode/sprite-2x-20130906.png") 100% 8% no-repeat;
+    background-size: 100%;
+    margin-left: 15px;
+}
+.clear {
+    clear: both;
+}
+
+div.map-popup {
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.forTrue h3 img{
+	height:0px;
+}
