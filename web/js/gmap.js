@@ -165,30 +165,30 @@ var map;
                 var popupTemplate;
                 if (currentUserLatLon == null) {
                     popupTemplate = '<div class="marker-popup">' +
-                        '<div class="location-info">' +
-                        '<p class="info-title">' + title + '</p>' +
-                        '<p class="info-address">' + address + '</p>' +
-                        '</div>' +
                         '<div class="directions">' +
                         '<a target="_blank" onclick="directionClick(\'' + link + '\')">' +
                         '<div class="directions-icon"></div>' +
                         '<p class="directions-button">Directions</p>' +
                         '</a>' +
+                        '</div>' +
+                        '<div class="location-info">' +
+                        '<p class="info-title">' + title + '</p>' +
+                        '<p class="info-address">' + address + '</p>' +
                         '</div>' +
                         '<div class="clear"></div>' +
                         '</div>';
                 } else {
                     popupTemplate = '<div class="marker-popup">' +
-                        '<div class="location-info">' +
-                        '<p class="info-title">' + title + '</p>' +
-                        '<p class="info-address">' + address + '</p>' +
-                        '<p class="info-address">Distance from current location is: ' + distance + 'km' + '</p>' +
-                        '</div>' +
                         '<div class="directions">' +
                         '<a target="_blank" onclick="directionClick(\'' + link + '\')">' +
                         '<div class="directions-icon"></div>' +
                         '<p class="directions-button">Directions</p>' +
                         '</a>' +
+                        '</div>' +
+                        '<div class="location-info">' +
+                        '<p class="info-title">' + title + '</p>' +
+                        '<p class="info-address">' + address + '</p>' +
+                        '<p class="info-address">Distance from current location is: ' + distance + 'km' + '</p>' +
                         '</div>' +
                         '<div class="clear"></div>' +
                         '</div>';

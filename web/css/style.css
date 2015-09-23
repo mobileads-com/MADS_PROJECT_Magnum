@@ -455,13 +455,11 @@ body {
     height: auto;
 }
 .location-info {
-    width: 50%;
+    width: 100%;
     height: auto;
-    float: left;
     background-color: #ffffff;
 }
 .location-info .info-title, .location-info .info-address {
-    margin: 3px 10px 3px 10px;
     padding: 0;
 }
 .location-info .info-title {
@@ -473,9 +471,8 @@ body {
 }
 .directions {
     margin-top: 5px;
-    width: 50%;
+    width: 100%;
     height: auto;
-    float: right;
     background-color: #ffffff;
 }
 .directions a {
@@ -486,7 +483,7 @@ body {
 }
 .directions .directions-button {
     text-align: left;
-    margin: 0 0 0 5px;
+    margin: 0px;
     color: #2493d1;
     font-size: 9px;
 }
@@ -495,7 +492,7 @@ body {
     height: 20px;
     background: url("https://maps.gstatic.com/tactile/directions/travel_mode/sprite-2x-20130906.png") 100% 8% no-repeat;
     background-size: 100%;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .clear {
     clear: both;
