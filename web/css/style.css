@@ -72,7 +72,7 @@ body {
 }
 .punctir2{
 	position: absolute;
-	top: 145px;
+	top: 130px;
 	left: 50%;
 	margin-left: -54.5px;
 	width: 102px;
@@ -107,12 +107,13 @@ body {
   left: 4px;
 }
 .hashtag{
+    opacity: 0;
 	position: absolute;
 	width: 84px;
 	height: 14px;
 	left: 50%;
 	margin-left: -42px;
-	bottom: 15px;
+	bottom: 10px;
 }
 .bubble{
 	width: 100%;
@@ -281,7 +282,7 @@ body {
 	width: 280px;
 	height: 36px;
 	position: absolute;
-	top:435px;
+	top:410px;
 	opacity: 0;
 	left: 50%;
 	margin-left: -140px;
@@ -505,4 +506,16 @@ div.map-popup {
 }
 .forTrue h3 img{
 	height:0px;
+}
+
+.footer {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 5px;
+    left: 110px;
+}
+.footer img {
+    width: 100%;
+    height: 20px;
 }

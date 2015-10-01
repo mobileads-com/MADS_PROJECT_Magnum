@@ -203,7 +203,7 @@ var testunit = function() {
                     });
                     tl.to(".hashtag", 0.4, {
                         delay: 0.3,
-                        opacity: "0"
+                        opacity: "1"
                     });
                     tl.to(".confeti", 0.4, {
                         delay: 0.7,
