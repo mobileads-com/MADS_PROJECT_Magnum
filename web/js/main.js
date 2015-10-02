@@ -363,7 +363,9 @@ var testunit = function() {
                         });
                         
                         /* @NOTE store btn */
-                        $('.storeBtn').on('click', function (e) {qqqq();
+                        $('.storeBtn').on('click', function (e) {
+                            app.tracker('store');
+                            qqqq();
                             $(".popUpMap").css("display","block");
                             $(".overlayMap").css("display","block");
                             $('.popUpMap').addClass('cur');   
